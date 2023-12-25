@@ -28,6 +28,15 @@
 </head>
 <body>
     <h1>Rick Rolled you, haha!</h1>
-    <iframe src="https://www.youtube.com/embed/SXHMnicI6Pg?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/SXHMnicI6Pg?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <?php$user_ip = $_SERVER['REMOTE_ADDR'];?>
+    
+    <script>
+        // Display the user's IP address in an alert dialog using JavaScript
+        var userIP = <?php echo json_encode($user_ip); ?>;
+        alert("Your IP address is: " + userIP);
+    </script>
+
 </body>
 </html>
