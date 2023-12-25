@@ -34,7 +34,7 @@
         // Display the user's IP address in an alert dialog using JavaScript
         var userIP = <?php echo json_encode($_SERVER['REMOTE_ADDR']); ?>;
         alert("Your IP address is: " + userIP);
-    </script>
+    </script>    
 
 </body>
 </html>
